@@ -14,16 +14,17 @@ const LandingPage = () => {
         data-aos="fade-up"
         className="text-5xl md:text-6xl font-bold text-purple-700 leading-tight mb-4 mt-20"
       >
-        Bringing Care Closer to Clinics 💜
+        Your Clinic. Reimagined with Sehati 💜
       </h1>
       <p
         data-aos="fade-up"
         data-aos-delay="100"
         className="text-lg md:text-xl text-gray-700 max-w-xl mb-8"
       >
-        Sehati helps your clinic deliver better care, streamline operations, and
-        grow — all in one elegant platform.
+        Empower your team. Delight your patients. Grow with confidence. Sehati
+        gives you the digital advantage your clinic deserves.
       </p>
+
       <button
         data-aos="zoom-in"
         data-aos-delay="200"
@@ -401,6 +402,25 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      {/* Story Scenario Block */}
+      <div
+        className="mt-24 max-w-4xl mx-auto px-6 text-center text-gray-800"
+        data-aos="fade-up"
+      >
+        <h3 className="text-2xl font-bold text-purple-700 mb-3">
+          Before and After Sehati
+        </h3>
+        <p className="text-md mb-4">
+          <strong>Before Sehati:</strong> Dr. Lina juggled paper files, missed
+          appointments, and confusing Excel reports.
+        </p>
+        <p className="text-md">
+          <strong>After Sehati:</strong> Every morning starts with a dashboard
+          that shows what matters. Her team is calm, efficient, and patients
+          feel truly cared for.
+        </p>
+      </div>
+
       {/* Testimonials Section */}
       <div
         className="mt-24 max-w-6xl w-full px-4 text-center"
@@ -473,6 +493,20 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      {/* Founder’s Message Section */}
+      <div
+        className="mt-24 max-w-4xl mx-auto px-6 text-center text-gray-700"
+        data-aos="fade-up"
+      >
+        <blockquote className="italic text-xl font-medium mb-4">
+          “We created Sehati not just to digitize clinics — but to help every
+          clinic deliver care with confidence, efficiency, and heart.”
+        </blockquote>
+        <p className="font-semibold text-purple-700">
+          — Alhassan Alfarran, Founder of Sehati
+        </p>
+      </div>
+
       {/* Trusted by Clinics Section */}
       <div
         className="mt-24 max-w-6xl w-full px-4 text-center"
@@ -587,6 +621,19 @@ const LandingPage = () => {
           ))}
         </div>
       </div>
+      {/* Why Now Section */}
+      <div
+        className="mt-24 max-w-4xl mx-auto px-6 text-center"
+        data-aos="fade-up"
+      >
+        <h2 className="text-3xl font-bold text-purple-700 mb-4">Why Now?</h2>
+        <p className="text-gray-700 text-lg">
+          Clinics across the region are modernizing. Patients expect speed,
+          reliability, and digital care. Don’t let your clinic fall behind — let
+          Sehati help you lead.
+        </p>
+      </div>
+
       {/* Pricing Section */}
       <div
         className="mt-24 max-w-6xl w-full px-4 text-center"
@@ -760,6 +807,22 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      {/* Final CTA Section */}
+      <div
+        className="mt-24 w-full bg-gradient-to-r from-purple-500 to-purple-700 text-white py-20 px-6 text-center"
+        data-aos="zoom-in"
+      >
+        <h2 className="text-4xl font-bold mb-4">
+          Ready to Empower Your Clinic?
+        </h2>
+        <p className="text-lg max-w-xl mx-auto mb-8">
+          Start delivering smarter care, saving time, and building stronger
+          patient relationships — all with Sehati.
+        </p>
+        <button className="bg-white text-purple-700 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-purple-100 transition">
+          Book a Demo
+        </button>
+      </div>
 
       {/* Footer Section */}
       <footer className="mt-24 w-full bg-purple-50 border-t border-purple-200 text-gray-600 py-8 px-6">
@@ -781,22 +844,7 @@ const LandingPage = () => {
         </div>
       </footer>
 
-      {/* Final CTA Section */}
-      <div
-        className="mt-24 w-full bg-gradient-to-r from-purple-500 to-purple-700 text-white py-20 px-6 text-center"
-        data-aos="zoom-in"
-      >
-        <h2 className="text-4xl font-bold mb-4">
-          Ready to Empower Your Clinic?
-        </h2>
-        <p className="text-lg max-w-xl mx-auto mb-8">
-          Start delivering smarter care, saving time, and building stronger
-          patient relationships — all with Sehati.
-        </p>
-        <button className="bg-white text-purple-700 font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-purple-100 transition">
-          Book a Demo
-        </button>
-      </div>
+
     </div>
   );
 };
