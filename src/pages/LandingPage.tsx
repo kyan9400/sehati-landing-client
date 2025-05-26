@@ -813,7 +813,7 @@ const LandingPage = () => {
         data-aos="zoom-in"
       >
         <h2 className="text-4xl font-bold mb-4">
-          Ready to Empower Your Clinic?
+          Ready to Empower a Clinic?
         </h2>
         <p className="text-lg max-w-xl mx-auto mb-8">
           Start delivering smarter care, saving time, and building stronger
