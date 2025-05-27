@@ -1,8 +1,13 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"], // Ensure this is correct
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        // If you have anything here, check the paths carefully
+        // 'hero-pattern': "url('/path/to/hero-pattern.svg')", // THIS IS AN EXAMPLE OF A BAD PATH
+      },
+    },
   },
   plugins: [],
 };
