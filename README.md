@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# Sehati – Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Marketing site for **Sehati** (صحتي), an Arabic-first clinic-management platform. The page presents the product's features, pricing and FAQ, and lets visitors request a free demo.
 
-## Available Scripts
+**Live site:** https://sehati-landing-client.vercel.app
 
-In the project directory, you can run:
+The application itself lives in a separate repository: [kyan9400/sehati-client](https://github.com/kyan9400/sehati-client).
 
-### `npm start`
+## What's on the page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A single-page layout with anchor navigation (Features, Why Sehati, Pricing, FAQ, Contact) and scroll animations:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Hero with a "Book a Free Demo" call to action
+- Features: smart appointment scheduling, patient profiles, doctor & staff management, analytics dashboard, customizable settings, billing & invoicing
+- Why Sehati and who it is for (solo practitioners, polyclinics, specialized centers, multi-branch medical groups)
+- How it works in four steps, testimonials, "trusted by" logos, data security
+- Pricing tiers: Starter, Growth, Enterprise
+- FAQ, demo request form, contact section and footer
 
-### `npm test`
+The demo form is front-end only: it logs the submission to the browser console and shows a thank-you alert. There is no backend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech stack
 
-### `npm run build`
+- React 19 + TypeScript, bootstrapped with Create React App (`react-scripts` 5)
+- React Router 7
+- Tailwind CSS 3 via PostCSS and Autoprefixer
+- AOS (Animate On Scroll) and Heroicons
+- Hosted on Vercel
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Requires Node.js 20+ and npm.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm ci          # install dependencies
+npm start       # dev server on http://localhost:3000
+npm run build   # production build into build/
+```
 
-### `npm run eject`
+No environment variables are required.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project structure
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+public/                  static assets and index.html
+src/
+  App.tsx                router; mounts the landing page at /
+  pages/LandingPage.tsx  the whole landing page (navbar, sections, footer)
+  index.css              Tailwind directives
+tailwind.config.js       Tailwind content paths
+postcss.config.js        Tailwind + Autoprefixer
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Deployment
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The `main` branch is deployed by Vercel using the standard CRA build (`npm run build`, output in `build/`).
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT — see [LICENSE](LICENSE).
